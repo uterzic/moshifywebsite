@@ -578,5 +578,4 @@ a {
 .collapsible--expanded .collapsible__content {
   opacity: 1;
   max-height: 100vh;
-  transition: max-height 0.5s;
 }
