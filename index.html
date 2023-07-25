@@ -8,54 +8,57 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <footer class="block block--dark footer">
-      <div class="container grid footer__sections">
-        <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 1</h2>
-              <svg class="icon icon--primary collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
-              </svg>
-          </header>
-          <div class="collapsible__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sit?
-          </div>
-        </section>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="Logo of this website"></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Hosting</a></li>
+            <li class="nav__item"><a href="#">VPS</a></li>
+            <li class="nav__item"><a href="#">Domain</a></li>
+            <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+    </nav>
+    </header>
 
-        <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 2</h2>
-              <svg class="icon icon--primary collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
-              </svg>
-          </header>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Moshify</a></li>
-              <li><a href="#">Moshify</a></li>
-              <li><a href="#">Moshify</a></li>
-            </ul>
+    <section class="block block--dark block--skewed-left hero">
+      <header class="container grid grid--1x2">
+          <div class="block__header hero__content">
+              <h1 class="block__heading">Cloud Hosting for Pros</h1>
+              <p class="hero__tagline">Deploy your webistes in less than 60 seconds.</p>
+              <a href="#" class="btn btn--accent btn--streched">Get Started</a>
           </div>
-        </section>   
+          <picture>
+            <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
+            <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
+            <img class="hero__image" src="images/banner.png" alt="Banner image">
+          </picture>
+      </header>
+    </section>
 
-        <section class="collapsible footer__section">
-          <header class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Item 3</h2>
-              <svg class="icon icon--primary collapsible__chevron">
-                  <use xlink:href="images/sprite.svg#chevron"></use>
-              </svg>
-          </header>
-          <div class="collapsible__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aliquam.
-          </div>
-        </section>
-
-        <section class="footer__brand">
-          <img src="images/logo.svg" alt="logo">
-          <p class="footer__copyright">Copyright &copy;2023 uterzic</p>
-        </section>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Starting at $9 per month</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, debitis?</p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter domain name here...">
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>Search</button>
       </div>
-    </footer>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com $9</span></li>          
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
